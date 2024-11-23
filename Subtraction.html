@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subtraction</title>
+    </head>
+    <style>
+        .subject {
+            text-align: center;
+            font-size: 75px;
+        }
+        .center {
+            text-align: center;
+        }
+
+        .menu-bar {
+            font-size: 30px;
+            text-align: center;
+        }
+        .video-image { 
+            text-align: center;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(176, 224, 230);
+        }
+
+        .question {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .explanation {
+            font-size: 35px;
+            text-align: left;
+            padding: 0 2cm;
+        }
+
+        .reveal-button {
+            text-align: center;
+            border-width: 5px;
+            border-radius: 10px;
+            background-color: rgb(255, 223, 186);
+            width: 300px;
+            height: 100px;
+            font-size: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .reveal-button:hover {
+            background-color: rgb(255, 200, 150);
+        }
+
+        .answer {
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .added-section-title {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .added-section-question {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .homework-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .homework-links a {
+            font-size: 25px;
+            display: block;
+            margin: 10px;
+        }
+
+        .video-image h2, .homework-section h2 {
+            font-size: 35px; 
+        }
+    </style>
+    <body>
+        <div class="subject">
+            <h2>Subtraction</h2>
+        </div>
+
+        <div class="menu-bar">
+            <h2> 
+                <a href="index.html">Home</a> &emsp; 
+                <a href="Addition.html">Addition</a> &emsp; 
+                <a href="Subtraction.html">Subtraction</a> &emsp; 
+                <a href="Multiplication.html">Multiplication</a> &emsp;
+                <a href="Division.html">Division</a>
+            </h2>
+        </div>
+
+        <div style="text-align: center; padding-left: 2cm; font-size: 35px;">
+            <h2>What is Subtraction?</h2>
+        </div>
+
+        <div style="text-align: left; padding-left: 2cm; padding-right: 2cm; font-size: 25px;">
+            <p>
+                Subtraction is taking away a number or amount from another number or amount. It is the inverse operation of addition. While addition adds or puts together numbers to find the sum, subtraction removes a number from another number to find the difference.
+            </p>
+        </div>
+
+        <div class="added-section-title">How to Solve One-Digit Subtraction</div>
+
+        <div class="explanation">
+            To subtract one-digit numbers, simply subtract starting from the ones place. If the top number is smaller than the bottom number, you need to borrow.
+        </div>
+
+        <div class="explanation">
+            Example: <strong>9 - 4</strong><br>
+            Step 1: Subtract the ones place (9 - 4).<br>
+            <strong>Answer: 9 - 4 = 5</strong>
+        </div>
+
+        <div class="center">
+            <img src="./photos/practice.png" alt="Addition Ex 1" width="500">
+        </div>
+
+        <div style="text-align: center; padding-left: 2cm; padding-right: 2cm; font-size: 25px;">
+            <p>In this example, we are starting with 9 stars, and subtracting 4 stars.</p>
+        </div>
+
+        <div class="center">
+            <img src="./photos/12345.png" alt="Addition Ex 1" width="400">
+        </div>
+
+        <div style="text-align: center; padding-left: 2cm; padding-right: 2cm; font-size: 25px;">
+            <p>When we do this, we get a difference of 5 stars.</p>
+        </div>
+
+        <div class="added-section-question">Try Solving This Problem!</div>
+        <div style="text-align: center;">
+            <div class="question">What is 7 - 3?</div>
+            <button class="reveal-button" onclick="revealAnswerOne()">Reveal Answer</button>
+            <div id="answerOne" class="answer" style="display: none;">The answer is: 4</div>
+        </div>
+
+        <div class="added-section-title">How to Solve Two-Digit Subtraction</div>
+
+        <div class="explanation">
+            To subtract two-digit numbers, align the digits by place value and subtract starting from the ones place. If the digit on top is smaller than the one below, borrow 1 from the tens place.
+        </div>
+
+        <div class="explanation">
+            Example: <strong>42 - 19</strong><br>
+            Step 1: Subtract the ones place (2 - 9). Borrow 1 from the tens place.<br>
+            Step 2: 2 becomes 12, and 12 - 9 equals 3.<br>
+            Step 3: Subtract the tens place (4 - 1 = 3).<br>
+            <strong>Answer: 42 - 19 = 23</strong>
+        </div>
+
+        <div class="added-section-question">Try Solving This Problem!</div>
+        <div style="text-align: center;">
+            <div class="question">What is 63 - 27?</div>
+            <button class="reveal-button" onclick="revealAnswerTwo()">Reveal Answer</button>
+            <div id="answerTwo" class="answer" style="display: none;">The answer is: 36</div>
+        </div>
+
+        <div class="added-section-title">How to Solve Three-Digit Subtraction</div>
+
+        <div class="explanation">
+            To solve three-digit subtraction, align the digits by place value. Subtract starting from the ones place, borrowing as needed.
+        </div>
+
+        <div class="explanation">
+            Example: <strong>725 - 489</strong><br>
+            Step 1: Subtract the ones place (5 - 9). Borrow 1 from the tens place.<br>
+            Step 2: Subtract the tens place (1 - 8). Borrow from the hundreds place.<br>
+            Step 3: Subtract the hundreds place (6 - 4 = 2).<br>
+            <strong>Answer: 725 - 489 = 236</strong>
+        </div>
+
+        <div class="added-section-question">Try Solving This Problem!</div>
+        <div style="text-align: center;">
+            <div class="question">What is 814 - 376?</div>
+            <button class="reveal-button" onclick="revealAnswerThree()">Reveal Answer</button>
+            <div id="answerThree" class="answer" style="display: none;">The answer is: 438</div>
+        </div>
+
+        <div class="added-section-title">Solve a Word Problem</div>
+
+        <div class="explanation">
+            Sally has 456 apples in her orchard. She sells 128 apples to her customers. How many apples does she have left?<br>
+            Align the numbers by place value and subtract starting from the ones place, borrowing as necessary.
+        </div>
+
+        <div class="added-section-question">Try Solving This Problem!</div>
+        <div style="text-align: center;">
+            <div class="question">456 apples - 128 sold to coustomers</div>
+            <button class="reveal-button" onclick="revealAnswerWord()">Reveal Answer</button>
+            <div id="answerWord" class="answer" style="display: none;">The answer is: 328</div>
+        </div>
+
+        <div class="video-image">
+            <h2>Here is a video to further explain subtraction</h2>
+            <iframe 
+                width="853" height="480" src="https://www.youtube.com/embed/r3qKojj4g4g" title="Subtraction - Math | Basic Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="homework-section">
+            <h2>Additional Resources</h2>
+            <div class="homework-links">
+                <a href="https://math-drills.com/subtraction.php">subtraction worksheet</a>
+                <a href="https://www.youtube.com/watch?v=pv8URIRgCdo&t=8s">Subtraction Video</a>
+                <a href="https://www.superteacherworksheets.com/subtraction.html">Super teacher work sheets</a>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <button class="reveal-button" onclick="scrollToTop()">Back to Top</button>
+        </div>
+        <script>
+            function revealAnswerOne() {
+                document.getElementById('answerOne').style.display = 'block';
+            }
+
+            function revealAnswerTwo() {
+                document.getElementById('answerTwo').style.display = 'block';
+            }
+
+            function revealAnswerThree() {
+                document.getElementById('answerThree').style.display = 'block';
+            }
+
+            function revealAnswerWord() {
+                document.getElementById('answerWord').style.display = 'block'; 
+            }
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+    </body>
+</html>
+
+
+    
+       
+
+
+
+

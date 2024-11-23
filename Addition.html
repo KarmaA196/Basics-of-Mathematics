@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Addition</title>
+    </head>
+    <style>
+        .subject {
+            text-align: center;
+            font-size: 75px;
+        }
+        .center {
+          text-align:center;
+        }
+
+        .menu-bar {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .reveal-button {
+            text-align: center;
+            border-width: 5px;
+            border-radius: 10px;
+            background-color: rgb(255, 223, 186);
+            width: 300px;
+            height: 100px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .reveal-button:hover {
+            background-color: rgb(255, 200, 150);
+        }
+
+        .question {
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .answer {
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .answerTwo {
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .video-image { 
+            text-align: center;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(176, 224, 230);
+        }
+    
+    </style>
+    <body>
+        <div class = "subject">
+            <h2>Addition</h2>
+        </div>
+
+        <div class = "menu-bar">
+            <h2> <a href="index.html">Home</a> &emsp; <a href="Addition.html">Addition</a> &emsp; <a href="Subtraction.html">Subtraction</a> &emsp; <a href="Multiplication.html">Multiplication</a>&emsp;<a href="Division.html">Division</a></h2>
+        </div>
+
+        <div style="text-align: center; padding-left: 2cm; font-size: 35px; ">
+            <h2>What is Addition?</h2>
+        </div>
+
+        <div style="text-align: left; padding-left: 2cm; padding-right: 2cm; font-size: 25px;">
+            <p>Addition is combining two or more numbers together to get a new total. The symbol used in addition problems looks like a cross, +, and is called a plus sign. The total for addition is called the sum. Other common words used in addition problems are add, plus, combine, together, total, in all, and increase.</p>
+        </div>
+
+        <div style="text-align: center; font-size: 35px; ">
+            <h3>Let's take a look at an Example</h3>
+        </div>
+
+        <div class="center">
+            <img src="./photos/Addition Problem Ex 1.png" alt="Addition Ex 1" width="500">
+        </div>
+        
+        <div style="text-align: center; font-size: 25px;">
+            <p>In this example, we are adding 3, and 4 circles together.</p>
+        </div>
+
+        <div class="center">
+            <img src="./photos/Addition Answer Ex 1.png" alt="Addition Ex 1" width="300">
+        </div>
+
+        <div style="text-align: center; font-size: 25px;">
+            <p>When we do this, we get a sum of 7 circles altogether.</p>
+        </div>
+
+        <div style="text-align: center; font-size: 35px; ">
+            <h3>Let's look at an example using numebrs</h3>
+        </div>
+
+        <div class="center">
+            <img src="./photos/Addition Problem Ex 2.png" alt="Addition Ex 2" width="450">
+        </div>
+
+        <div style="text-align: center; padding: 20px;">
+            <div class="question">Can you solve this? </div>
+            <button class="reveal-button" onclick="revealAnswer()">Reveal Answer</button>
+            <div id="answer" class="answer" style="display: none;">The answer is: 11</div>
+        </div>
+
+        <div style="text-align: center; padding-left: 20px; padding-right:20px; font-size: 35px; ">
+            <h3>Now that we know how to add small numbers, let's try adding larger numbers.</h3>
+        </div>
+        
+        <div class="center">
+            <img src="./photos/Addition Problem Ex 3.png" alt="Addition Ex 3" width="450">
+        </div>
+
+        <div style="text-align: center; padding: 20px;">
+            <div class="question">Can you solve this? </div>
+            <button class="reveal-button" onclick="revealAnswerTwo()">Reveal Answer</button>
+            <div id="answerTwo" class="answerTwo" style="display: none;">The answer is: 50</div>
+        </div>
+
+        <div style="text-align: center; padding-left: 20px; padding-right:20px; font-size: 35px; ">
+            <h3>Let's try a word problem with money.</h3>
+        </div>
+
+        <div style="text-align: center; padding-left: 20px; padding-right:20px; font-size: 25px; ">
+            <h3>Billy has $150. After helping his dad, Billy got another $50. How much money does Billy have after helping his dad?</h3>
+        </div>
+
+        <div class="center">
+            <img src="./photos/Addition Problem Ex 4.png" alt="Addition Ex 4" width="450">
+        </div>
+
+        <div style="text-align: center; padding-left: 20px; padding-right:20px; font-size: 25px; ">
+            <h3>Here we have 3 $50 bills, which totals to $150, and we are adding 1 $50 bill. When we add these together we get 4 $50 bills, or $200. </h3>
+        </div>
+
+        <div style="text-align: center; padding-left: 20px; padding-right:20px; font-size: 35px; ">
+            <h3>Below is an extra video to further explain addition before we move onto homework questions.</h3>
+        </div>
+
+        <div class = "video-image">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/BZ4FjSXjzgg" title="Math - Addition | Basic Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+
+        <div style = "text-align: center; font-size: 25px; margin-top: 40px; ">
+            <h2>Additional Resources</h2>
+            <div style = "font-size: 25px; display: block; margin: 10px;">
+                <a href="https://www.khanacademy.org/math/cc-kindergarten-math/cc-kindergarten-add-subtract/kindergarten-add-sub-intro/v/addition-introduction">Khan Academy Addition Tutorial</a>
+                <br>
+                <a href="https://ca.ixl.com/math/grade-2/add-one-digit-numbers-sums-to-10">1 Digit Addition Practice</a>
+                <br>
+                <a href="https://ca.ixl.com/math/grade-2/add-a-two-digit-and-a-one-digit-number-without-regrouping">2 Digit Addition Practice</a>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <button class="reveal-button" onclick="scrollToTop()">Back to Top</button>
+        </div>
+
+    </body>
+
+    <script>
+        function revealAnswer() {
+            document.getElementById("answer").style.display = "block";
+        }
+
+        function revealAnswerTwo() {
+            document.getElementById("answerTwo").style.display = "block";
+        }
+
+          function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+    </script>
+
+</html>
+
